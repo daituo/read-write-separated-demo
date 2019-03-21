@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    # 使用开发环境
+    active: dev
+
+server:
+  port: 8080
+
+#mybatis:
+#  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+
+#pagehelper分页插件
+#pagehelper:
+#    helperDialect: mysql
+#    reasonable: true
+#    supportMethodsArguments: true
+#    params: count=countSql
+
+
+#配置mybatis打印sql,只能是全路径
+logging:
+  level:
+    com.read.write.separated.demo.readwriteseparated.mapper: DEBUG
